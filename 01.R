@@ -1,34 +1,21 @@
-#' ---
-#' title: "Advent of Code 2019"
-#' author: "Riinu Ots"
-#' output: 
-#'   md_document: 
-#'     toc: yes
-#' ---
-
-#' https://adventofcode.com/
-
-#+ message = FALSE
 library(tidyverse)
 
 
-#' # Part 1: The Tyranny of the Rocket Equation
+# Part 1: ---
 
-
-#' Testing:
-#' 
+# Testing:
 example_input   = c(12, 14, 1969, 100756)
 example_results = floor(example_input/3) - 2
 correct_results = c(2, 2, 654, 33583)
 
 example_results == correct_results
 
-#' Solution:
+# Solution:
 sum(floor(scan("01-input")/3)-2)
 
-#' # Part 2: fuel needs fuel
+#' # Part 2: ----
 
-# Solution 1:
+# Solution:
 fuel_req_fn = function(module_req){
   req = sum(floor(module_req/3)-2)
   total = req
@@ -42,7 +29,7 @@ fuel_req_fn = function(module_req){
 
 map(scan("01-input"), fuel_req_fn) %>% unlist() %>% sum() 
 
-# Testing Solution 1:
+# Testing:
 correct_results2 = c(2, 2, 966, 50346) %>% sum()
 map(example_input, fuel_req_fn)
 test_results2 = map(example_input, fuel_req_fn) %>% unlist() %>% sum()

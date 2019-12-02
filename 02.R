@@ -1,19 +1,8 @@
-#' ---
-#' title: "Advent of Code 2019"
-#' author: "Riinu Ots"
-#' output: 
-#'   md_document: 
-#'     toc: yes
-#' ---
-
-#' https://adventofcode.com/
-
-#+ message = FALSE
 library(tidyverse)
 
 
 
-#' # Part 1:
+# Part 1: ----
 
 input_orig = melt_csv("02-input") %>% 
   mutate(value = parse_number(value)) %>% pull(value)
@@ -62,7 +51,7 @@ run_program(input_changed)
 
 #change_input(input_orig, 12, 2) %>% run_program()
 
-#' # Part 2:
+# Part 2: ----
 
 stop = FALSE
 for (noun in 0:99){
