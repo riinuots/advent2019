@@ -4,6 +4,7 @@
 #' output: 
 #'   md_document: 
 #'     toc: yes
+#'     variant: github
 #' ---
 
 #' https://adventofcode.com/
