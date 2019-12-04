@@ -5,6 +5,35 @@ Notes about functions/arguments I’d not come across before. And any
 other thoughts. Full solutions can be found in, e.g., `01.R`, `02.R`,
 etc.
 
+# Day 4
+
+Solved it programmatically, but used datatable and backgroundColor to
+debug: <http://rpubs.com/riinu/day04>
+
+Example of a mistake:
+
+![](04-debugging.png)
+
+Solution had no for loops, just two filters:
+
+``` r
+data %>% 
+  filter(
+      c2 >= c1 &
+      c3 >= c2 &
+      c4 >= c3 &
+      c5 >= c4 &
+      c6 >= c5
+  ) %>%
+  filter(
+      (c2 == c1 & c2 != c3)|
+      (c3 == c2 & (c3 != c4 & c2 != c1))|
+      (c4 == c3 & (c4 != c5 & c3 != c2))|
+      (c5 == c4 & (c5 != c6 & c4 != c3))|
+      (c6 == c5 & (c5 != c4 & c5 != c4))
+  )
+```
+
 # Day 3
 
 Learning from the time I spent in vain the previous day trying to make
