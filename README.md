@@ -5,6 +5,23 @@ Notes about functions/arguments I’d not come across before. And any
 other thoughts. Full solutions can be found in, e.g., `01.R`, `02.R`,
 etc.
 
+# Day 6
+
+I've not done network analysis before but I had a feeling today's challenge is a single-liner if using the right tools.
+
+So it was:
+
+```r
+
+read_delim("06-input", delim = ")", col_names = c("from", "to")) %>% 
+  graph_from_data_frame(directed = TRUE) %>% 
+  distances(to = "COM") %>%
+  sum()
+
+```
+`distances()` is the only real workhorse here, other lines are just read and convert the input to a graph object. I used `distances()` for Part II too (`v = YOU_orbits, to = SAN_orbits`).
+
+
 # Day 4
 
 Solved it programmatically, but used datatable and backgroundColor to
@@ -16,7 +33,7 @@ Example of a mistake:
 
 Solution had no for loops, just two filters:
 
-``` r
+```r
 data %>% 
   filter(
       c2 >= c1 &
