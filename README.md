@@ -21,6 +21,11 @@ read_delim("06-input", delim = ")", col_names = c("from", "to")) %>%
 ```
 `distances()` is the only real workhorse here, other lines are just read and convert the input to a graph object. I used `distances()` for Part II too (`v = YOU_orbits, to = SAN_orbits`).
 
+# Day 5
+
+Skipped this at first, now completed after doing Day 6 first.
+
+Didn't learn anything other than that indexing from 0 is a pain :D #datascience
 
 # Day 4
 
