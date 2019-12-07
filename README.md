@@ -5,6 +5,10 @@ Notes about functions/arguments I’d not come across before. And any
 other thoughts. Full solutions can be found in, e.g., `01.R`, `02.R`,
 etc.
 
+# Day 7
+
+Day 7 was horrendous, finished it but...do not look at the code. 
+
 # Day 6
 
 I've not done network analysis before but I had a feeling today's challenge is a single-liner if using the right tools.
