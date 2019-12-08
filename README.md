@@ -9,7 +9,7 @@ etc.
 
 Phew, happy Sunday. This one was really simple. Part I was just `count()` and `filter()`, Part II just `ggplot()`, `geom_tile()` and knowing that NA can be used as a transparent colour/fill: `scale_fill_manual(values = c("white", "black", NA))` 
 
-![](/advent2019/README_files/08-bios.png)
+![](https://github.com/riinuots/advent2019/blob/master/08-bios.png)
 
 # Day 7
 
