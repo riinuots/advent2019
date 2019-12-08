@@ -5,6 +5,12 @@ Notes about functions/arguments I’d not come across before. And any
 other thoughts. Full solutions can be found in, e.g., `01.R`, `02.R`,
 etc.
 
+# Day 8
+
+Phew, happy Sunday. This one was really simple. Part I was just `count()` and `filter()`, Part II just `ggplot()`, `geom_tile()` and knowing that NA can be used as a transparent colour/fill: `scale_fill_manual(values = c("white", "black", NA))` 
+
+![](/advent2019/README_files/08-bios.png)
+
 # Day 7
 
 Day 7 was horrendous, finished it but...do not look at the code. 
