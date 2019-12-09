@@ -5,6 +5,10 @@ Notes about functions/arguments I’d not come across before. And any
 other thoughts. Full solutions can be found in, e.g., `01.R`, `02.R`,
 etc.
 
+# Day 9
+
+This was really easy as well - going back to the Intcode Computer, adding a bit more functionality. Part II was the exact same thing as Part II, just a different input value. But the program ran for a long time (didn't time it but several minutes I think).
+
 # Day 8
 
 Phew, happy Sunday. This one was really simple. Part I was just `count()` and `filter()`, Part II just `ggplot()`, `geom_tile()` and knowing that NA can be used as a transparent colour/fill: `scale_fill_manual(values = c("white", "black", NA))` 
