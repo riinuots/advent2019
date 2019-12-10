@@ -5,6 +5,12 @@ Notes about functions/arguments I’d not come across before. And any
 other thoughts. Full solutions can be found in, e.g., `01.R`, `02.R`,
 etc.
 
+# Day 10
+
+Now this was a proper refresher on vector geometry.
+
+Cool new function: `tidyr::crossing()` puts two tibbles together in every possible way, so every line gets matched with every line from the other tibble. Like a full join without a shared variable.
+
 # Day 9
 
 This was really easy as well - going back to the Intcode Computer, adding a bit more functionality. Part II was the exact same thing as Part II, just a different input value. But the program ran for a long time (didn't time it but several minutes I think).
