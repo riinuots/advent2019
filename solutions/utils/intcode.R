@@ -5,7 +5,9 @@ intcode = function(input_changed,
                    input_val1,
                    input_val2 = NA,
                    use_val1 = TRUE,
-                   rel_base = 0){
+                   rel_base = 0,
+                   # 1: up, 2: right, 3: down, 4: left
+                   robot_facing = 1){
   if (is.na(input_val2)){
     input_val2 = input_val1
   }

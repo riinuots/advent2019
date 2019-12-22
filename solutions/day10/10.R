@@ -79,7 +79,7 @@ laser %>%
   ggplot(aes(x = x1, y = y1)) +
   #geom_label() +
   geom_point() +
-  #gghighlight(sat_id1 %in% c(11, 13, 331) ) +
+  gghighlight(sat_id1 %in% c(11, 13, 331) ) +
   geom_point(data = tibble(x1 = 21, y1 = -19), colour = "red")
 
 
@@ -115,14 +115,16 @@ shooting_order = laser %>%
   arrange(n_row, angle) %>% 
   ungroup()
 
+
 laser %>% 
   ggplot(aes(x = x1, y = y1)) +
   geom_point() +
   geom_point(data = tibble(x1 = 21, y1 = -19), colour = "red") +
   geom_segment(data = slice(shooting_order, 1:20),
-               aes(x = 21, y = -19, xend = x1, yend = y1), colour = "red")
+               aes(x = 21, y = -19, xend = x1, yend = y1), colour = "red") +
+  ggtitle("First 20 shots")
 
-
+ggsave("10-first20_shots.png", width = 4, height = 4)
 #807
 #706
 
