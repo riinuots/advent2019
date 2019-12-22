@@ -2,7 +2,7 @@ library(tidyverse)
 library(igraph)
 
 # Part I 
-orbit_input = read_delim("06-input", delim = ")", col_names = c("from", "to"))
+orbit_input = read_delim("solutions/day06/06-input", delim = ")", col_names = c("from", "to"))
 
 g = orbit_input %>% 
   graph_from_data_frame(directed = TRUE)
