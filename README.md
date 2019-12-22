@@ -5,6 +5,11 @@ Notes about functions/arguments I’d not come across before. And any
 other thoughts. Full solutions can be found in, e.g., `01.R`, `02.R`,
 etc.
 
+# Day 12
+
+After setting my Part II to run - went on Twitter to see what the chat about this had been. Realised that my solution would not be finished this decade, as it would require around quadrillion iterations. Reworked to calculate the phase for each coordinate separately, then used the smallest common multiple function (scm) from `library(schoolmath)` - again, as suggested by people on Twitter :)
+
+
 # Day 10
 
 Now this was a proper refresher on vector geometry.
