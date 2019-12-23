@@ -5,6 +5,12 @@ Notes about functions/arguments I’d not come across before. And any
 other thoughts. Full solutions can be found in, e.g., `01.R`, `02.R`,
 etc.
 
+# Day 15
+
+Part I of Day 15 was nice - a little bit of thinking and experimenting, but in the end ~10 lines of code.
+
+Now Part II was very tricky. The worst part was that it seemed hint that it relies on Part I, whereas really, it was a completely different puzzle. After struggling for a while, I went online for tips. Then played around quite a bit to convince myself of the solution and to code my own, rather than just copying what I'd seen. In the end, the solution was again ~10 lines of code, but many more were written in exploration/testing. I guess I now know some modular arithmetic.
+
 # Day 12
 
 After setting my Part II to run - went on Twitter to see what the chat about this had been. Realised that my solution would not be finished this decade, as it would require around quadrillion iterations. Reworked to calculate the phase for each coordinate separately, then used the smallest common multiple function (scm) from `library(schoolmath)` - again, as suggested by people on Twitter :)
@@ -111,8 +117,8 @@ This creates a bunch of png files, I then used imagemagick to convert:
 `convert *.png output.gif` (or `Sys("convert *.png output.gif")` in an R
 script)
 
-After meditationg over the gif a bit, I used `plotly::ggplotly()` to
-interact with the plot (zoom + hover over pooints for intersection
+After meditating over the gif a bit, I used `plotly::ggplotly()` to
+interact with the plot (zoom + hover over points for intersection
 coordinates).  
 Simple, but works. `¯\_(ツ)_/¯`
 
