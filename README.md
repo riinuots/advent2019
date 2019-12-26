@@ -5,6 +5,12 @@ Notes about functions/arguments I’d not come across before. And any
 other thoughts. Full solutions can be found in, e.g., `01.R`, `02.R`,
 etc.
 
+# Day 22
+
+Part I was a very cute card shuffler. It had three different moves (reverse cards, cut, redeal into slots based on an increment). Each move was a nice function to write, the slots with an increment included some very mild modular arithemtic with remainders.
+
+Part II could be done by rerunning the code from Part I ~1e15 times, which with my implemenation would take a million years. And doubt my beautiful MacBook would keep going for that long anyway. So I went online for pointers, realised this requires a composition of linear polynomials with modular inverses... I can just about follow the solutions but no way I could figure it out myself (unless I spent a lot of time with a university textbook). So decided to give this one a miss. But still appreciate being exposed to it. 
+
 # Day 15
 
 Part I of Day 15 was nice - a little bit of thinking and experimenting, but in the end ~10 lines of code.
