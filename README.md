@@ -1,5 +1,13 @@
+
+
+
+
 Diary: Advent of Code 2019
 ================
+
+Final result: 25/50 stars completed:
+
+![](advent2019_stars.png)
 
 Notes about functions/arguments I’d not come across before. And any
 other thoughts. Full solutions can be found in, e.g., `01.R`, `02.R`,
@@ -71,7 +79,7 @@ debug: <http://rpubs.com/riinu/day04>
 
 Example of a mistake:
 
-![](04-debugging.png)
+![](solutions/day04/04-debugging.png)
 
 Solution had no for loops, just two filters:
 
